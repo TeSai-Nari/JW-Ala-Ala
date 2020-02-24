@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --warnapinknya:crimson;
+    --bgcolour: rgb(12,18,39);
+}
+div{
+    border: 1px solid transparent;
+}
+/* start header */
+.header{
+    display         :flex;
+    justify-content : space-between;
+    height          :70px;
+    background-color:var(--bgcolour);
+    padding         : 0px 4%;
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    font-size       : 16px;
+    color           : white;
+}
+.header .headermenukiri{
+    display:flex;
+    align-items:center; 
+}
+.brand{
+    margin-top:5px;
+    width: 15.5%;
+    height: 165%;
+}
+.menukiri{
+    display         :flex;
+    align-items     :center;
+    flex-basis      : 75%;
+    justify-content :space-around;
+}
+a{
+    text-decoration:none;
+    color           : white;
+}
+.menukiri nav .container-Hidden-Menu, .bungkussemua{
+    display:none;
+    position:absolute;
+    width:650px;
+    top: 25px;
+    z-index: 5;
+}
+.menukiri nav{
+    position:relative;
+}
+.menukiri nav:hover .container-Hidden-Menu{
+    cursor          :pointer;
+    display         :block;
+    transition      : 0.5s ease;
+}
+.font-icon{
+    font-size       : 8px;
+}
+.headermenukanan{
+    display         :flex;
+    align-items     :center;
+    justify-content :space-around;
+    flex-grow       : 1;
+    flex-basis      : 30%;
+}
+.buttonborder{
+    border-radius   : 17.5px;
+    width           : 125px;
+    border          : 2px solid var(--warnapinknya);
+    line-height     : 35px;
+    transition      : 0.5s;
+    text-align      : center;
+    padding         : 0 10px;
+}
+.buttonborder:hover{
+    cursor          :pointer;
+    transform       :scale(1.03);
+}
+.color-primary{
+    color           : var(--warnapinknya);
+    font-size       : 10px;
+}
+/* end header */
+/* start hidden Menu */
+.container-Hidden-Menu{
+    display: flex;
+    border-radius:10px;
+    /* text-align:left; */
+}
+.bungkussemua{
+    display:flex;
+    flex-basis: 50%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.chm-container1{
+    display: flex;
+    flex-direction: row;
+    padding: 35px 0 0 30px;
+    flex-basis:100%;
+    background-color: white;
+}
+.diflexkanan{
+    margin-left:50px;
+}
+.warnabiru{
+    background-color: rgb(240, 247, 252);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.block-chm-cont1{
+    display: flex;
+    flex-direction: column;
+    /* flex-basis:55%; */
+}
+.tulisangabungan{
+    font-size: 25px;
+}
+/* end hidden Menu */
+
+/* start jumbotron */
+.container-jumbo{
+    height          : 760px;
+    background-color: var(--bgcolour);
+    display         :flex;
+    flex-direction  : column;
+    margin-bottom   : 345px;
+    color           : white;
+}
+.tulisan-container{
+    margin          : 70px 75px 0 75px;
+    text-align      : center;
+}
+.tombol{
+    background-color:var(--warnapinknya);
+    color:white;
+}
+.tombol-container{
+    padding:20px 42.5%;
+}
+.font-icon1{
+    font-size       : 14px;
+}
+.buttonborder1{
+    border-radius   : 20px;
+    width           : 175px;
+    height          : 40px;
+    border          : 2px solid var(--warnapinknya);
+    line-height     : 35px;
+    transition      : 0.5s;
+    text-align      : center;
+}
+
+.mobil{
+   position         : absolute;
+   top              : 450px;
+   left             : 20%;
+   border-radius    : 15px;
+   overflow         : hidden;
+   box-shadow       : 0 30px 60px rgba(0,0, 0, 0.15);
+}
+.grafik, .coding, .birupicker{
+    position        : absolute;
+    border-radius   : 7px;
+    overflow        : hidden;
+}
+.coding{
+    top     :415px;
+    right   : 12%; 
+}
+.grafik{
+    top     : 575px;
+    left    : 8%; 
+    box-shadow       : 0 -25px 25px  rgba(0,0, 0, 0.15);
+}
+
+.birupicker{
+    top     : 500px;
+    right   : 9%; 
+}
+/* end jumbotron */
+
+/* start kumpulan logo */
+.kumpulanlogo{
+    display         : flex;
+    height          : 350px;
+    padding         : 48px 0;
+    flex-direction  : column;
+    /* align-items:center; kalau bikin di sini, semuanya ditengah gak ada jarak */
+    flex-basis      : 100%;
+}
+.logo-1{
+    display:flex;
+    padding: 0 20px 30px 20px;
+    justify-content: space-evenly;
+}
+.logo-2{
+    align-items:center; /* Supaya logo pas ditengah */
+}
+/* end kumpulan logo */
+
+/* Start container gambar */
+.container3div2{
+    display:flex;
+    box-sizing: border-box;
+}
+.container3div2-1{
+    padding: 0 0 20px 65px;
+}
+.container3div2-2{
+    padding: 0 65px 20px 0;
+    flex-direction: row-reverse;
+}
+.cont3-1{
+    display: flex;
+    flex-direction: column;
+    flex-basis:100%;
+    margin: 0 0 48px 0;
+    justify-content: center;
+    overflow:hidden;
+}
+.boxcontainer{
+    padding:0 65px;
+}
+.gambarstack{
+    width:140%;
+    margin-left:-25px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); */
+}
+.gambarstack1{
+    width:145%;
+    right:35%;
+    margin-top: 50px;
+    margin-left:-275px;
+}
+/* end container gambar */
+
+/* Start container last */
+
+.containerlast{
+    display: flex;
+    background-color: #21252B;
+    height:300px;
+    padding: 64px 32px;
+}
+.last{
+    flex-direction: column;
+    align-content: center;
+    padding: 0 20px;
+}
+/* end container last */
+
+.footer{
+    display         : flex;
+    height          : 65px;
+    padding         : 0 45px;
+    align-items: center;
+    color           :white;
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    font-size       : 11px;
+    box-sizing: border-box;
+    background-color: rgb(31, 34, 39);
+
+}
+.containerfooter{
+    display:flex;
+    align-items:center;
+}
+.trademarks{
+    display:flex;
+    align-items:center;
+    flex-basis: 85%;
+    justify-content: space-around;
+}
+.footermenu {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-basis: 75%;
+
+}
+/* fonts start*/
+.bigfonts1{
+    font-family     : 'Overpass','Trebuchet MS',Arial,sans-serif;
+    font-size       : 56px;
+}
+.bf1w800{
+    font-weight     : 800;
+}
+.bf1w400{
+    font-weight     : 400;
+    line-height     : 56px;
+    margin-bottom   : 20px;
+}
+.bigfonts2{
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    font-size       : 1.5em;
+    color           : white;
+    line-height     : 38px;
+    padding         : 10px 15%;
+}
+.bigfonts3{
+    font-family     : 'Overpass','Trebuchet MS',Arial,sans-serif;
+    font-size       : 42px;
+    color           : white;
+    margin          : 10px 0 10px 0;
+}
+.fonts3{
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    font-size       : 20px;
+    line-height     : 36px;
+    margin-bottom   : 10px;
+}
+.f3bold{
+    font-weight     : bold;
+    color:rgb(187, 178, 178);
+}
+.f3light{
+    font-weight     : lighter;
+}
+.bigfonts4{
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    font-size       : 28px;
+    color           : white;
+}
+.fonts4{
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    font-size       :16px;
+    letter-spacing: 1px;
+
+}
+.f4thin{
+    font-weight     :thin;
+    color           : white;
+
+}
+.f5bold{
+    font-weight     :bold;
+    color           : white;
+}
+.f5black{
+    color           :black;
+    margin-bottom   : 15px; 
+}
+.tulisan-chm{
+    color           : grey;
+    line-height     : 35px;
+    margin-bottom   : 15px; 
+    font-size       : 13.5px;
+}
+
+.fonts5{
+    font-family     : 'Lato','Trebuchet MS',Arial,sans-serif;
+    color           : white;
+    font-size       :14px;
+    font-weight:thin;
+    letter-spacing: 1px;
+}
+/* fonts ends*/
